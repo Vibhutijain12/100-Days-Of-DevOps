@@ -1,5 +1,5 @@
 
-## Day9 - Fixing MariaDB Service Downtime
+## Day 9 - Fixing MariaDB Service Downtime
 
 #### Task: 
 
@@ -36,7 +36,7 @@ See "systemctl status mariadb.service" and "journalctl -xeu mariadb.service" for
 sudo journalctl -xeu mariadb --no-pager
 ```
 
-Output showed that: MariaDB sees leftover files in /var/lib/mysql but no proper initialized database. This could have occured due to a partial or failed installation ofthe service.
+Output showed that: MariaDB sees leftover files in /var/lib/mysql but no proper initialized database. This could have occured due to a partial or failed installation of the service.
 
 - Check the ownership (identify the problem): 
 ```
